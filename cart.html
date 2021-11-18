@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Shopping Cart</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="style.css" >
+        <script src="cart.js"></script>
+    </head>
+    <body>
+        <div class="flex-col">
+            <div id='cart-container'>
+                <div class="center btm-border">
+                    <h1>Shopping Cart</h1>
+                </div>
+                <div class="center padded btm-border flex-row">
+                    <label id="add-label" for="add-input">Add Item: </label>
+                    <input id="add-input" aria-labelledby="add-label" type="text" />
+                    <button id="add-item" aria-label="add-to-list">Add</button>
+                </div>
+                <div class="center padded btm-border flex-row">
+                    <button id="sort-button" aria-label="sort-list">Sort</button>
+                </div>
+                
+                <div id="cart-items-container"></div>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>

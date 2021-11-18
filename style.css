@@ -45,6 +45,20 @@ thead{
     flex: 1;
 }
 
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    gap: 1rem;
+}
+
 .center{
     display: flex;
     justify-content: center;
@@ -105,6 +119,17 @@ thead{
     font-size: var(--paragraph-font-size);
 }
 
+.btm-border{
+    border-bottom: 1px solid black;
+}
+
+.margined{
+    margin: 2rem;
+}
+.padded{
+    padding: 2rem;
+}
+
 @keyframes spin {
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg)}
@@ -135,3 +160,31 @@ thead{
     font-size: var(--paragraph-font-size);
 }
 
+/* Shopping Cart Styles */
+
+.cart-item{
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+}
+.cart-text{
+    flex: 1;
+}
+
+.checked{
+    background-color: darkgray;
+}
+
+#cart-container{
+    background-color: white;
+    height: 90vh;
+    width: 60%;
+}
+
+#cart-items-container{
+    margin-top: 2rem;
+    border-top: 2px solid black;
+}
