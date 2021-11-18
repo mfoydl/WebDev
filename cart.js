@@ -84,8 +84,8 @@ function moveCartItemDown(event){
     let itemsArray = [];
     let cart = document.querySelector('#cart-items-container');
 
-    for(let i=0;i<items.length-1;i++){
-        if(items[i] == parent){
+    for(let i=0;i<items.length;i++){
+        if(items[i] == parent && i<items.length-1){
             itemsArray.push(items[i+1]);
             itemsArray.push(items[i]);
             i++
@@ -93,6 +93,7 @@ function moveCartItemDown(event){
         else{
             itemsArray.push(items[i]);
         }
+       
     }
     
     cart.innerHTML = "";
@@ -120,7 +121,6 @@ function sortList(){
 }
 
 function checkCartItem(event){
-    console.log('check');
     let target = event.target;
     let parent = target.parentNode;
 
